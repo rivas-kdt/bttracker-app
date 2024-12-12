@@ -29,6 +29,7 @@ export const options = {
   responsive: true,
   plugins: {
     legend: {
+        display: false,
       position: "top",
       labels: {
         color: "white", // Change legend text color
