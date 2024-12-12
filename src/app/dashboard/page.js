@@ -5,8 +5,6 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/UI/Cards/Cards";
-import { GiPayMoney } from "react-icons/gi";
-import { GiReceiveMoney } from "react-icons/gi";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -71,9 +69,9 @@ export const data = {
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col items-center justify-start w-full max-h-full gap-2 p-2 overflow-y-auto bg-zinc-800">
-      <div className="flex w-full gap-2">
-        <Card className={`w-full h-[175px]`}>
+    <div className="flex flex-col items-center justify-start w-full h-full overflow-y-auto bg-zinc-800">
+      <div className=" w-full h-[30%] flex gap-2 p-2">
+        <Card className={`w-full`}>
           <CardBody
             className={`h-full rounded-t-lg w-full p-0 flex justify-center items-center`}
           >
@@ -81,25 +79,19 @@ export default function Dashboard() {
           </CardBody>
         </Card>
       </div>
-      <div className="flex w-full gap-2">
-        <Card className={`w-1/2 py-4`}>
-          <CardBody
-            className={`h-full flex items-center justify-center text-green-400 font-bold p-0 gap-2`}
-          >
-            <GiReceiveMoney className=" w-[24px] h-[24px]"/>
-            <p className="text-2xl md:text-4xl">14,205</p>
+      <div className="flex w-full gap-2 h-[15%] p-2 pt-0">
+        <Card className={`w-1/2`}>
+          <CardBody className={` h-full flex items-center justify-center text-green-400`}>
+            <p className="text-2xl font-bold">14,205</p>
           </CardBody>
         </Card>
-        <Card className={`w-1/2 py-4`}>
-          <CardBody
-            className={`h-full flex items-center justify-center text-red-400 font-bold p-0 gap-2`}
-          >
-            <GiPayMoney  className=" w-[24px] h-[24px]"/>
-            <p className="text-2xl md:text-4xl">15,250</p>
+        <Card className={`w-1/2`}>
+          <CardBody className={` h-full flex items-center justify-center text-red-400`}>
+            <p className="text-2xl font-bold">15,250</p>
           </CardBody>
         </Card>
       </div>
-      <div className="flex w-full">
+      <div className="flex w-full h-[54%] p-2 pt-0">
         <Card className={`w-full`}>
           <CardBody className={`p-2 h-[90%] text-lg  overflow-y-auto`}>
             <table className="w-full">
