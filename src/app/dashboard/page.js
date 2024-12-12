@@ -71,9 +71,9 @@ export const data = {
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col items-center justify-start w-full h-full gap-2 p-2 overflow-y-auto bg-zinc-800">
-      <div className=" w-full h-[30%] flex gap-2">
-        <Card className={`w-full`}>
+    <div className="flex flex-col items-center justify-start w-full max-h-full gap-2 p-2 overflow-y-auto bg-zinc-800">
+      <div className="flex w-full gap-2">
+        <Card className={`w-full h-[175px]`}>
           <CardBody
             className={`h-full rounded-t-lg w-full p-0 flex justify-center items-center`}
           >
@@ -81,8 +81,8 @@ export default function Dashboard() {
           </CardBody>
         </Card>
       </div>
-      <div className="flex w-full gap-2 h-[15%]">
-        <Card className={`w-1/2 p-0`}>
+      <div className="flex w-full gap-2">
+        <Card className={`w-1/2 py-4`}>
           <CardBody
             className={`h-full flex items-center justify-center text-green-400 font-bold p-0 gap-2`}
           >
@@ -90,7 +90,7 @@ export default function Dashboard() {
             <p className="text-2xl md:text-4xl">14,205</p>
           </CardBody>
         </Card>
-        <Card className={`w-1/2 p-0`}>
+        <Card className={`w-1/2 py-4`}>
           <CardBody
             className={`h-full flex items-center justify-center text-red-400 font-bold p-0 gap-2`}
           >
@@ -99,7 +99,7 @@ export default function Dashboard() {
           </CardBody>
         </Card>
       </div>
-      <div className="flex w-full h-[55%]">
+      <div className="flex w-full">
         <Card className={`w-full`}>
           <CardBody className={`p-2 h-[90%] text-lg  overflow-y-auto`}>
             <table className="w-full">
