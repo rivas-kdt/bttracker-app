@@ -5,6 +5,8 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/UI/Cards/Cards";
+import { GiPayMoney } from "react-icons/gi";
+import { GiReceiveMoney } from "react-icons/gi";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -80,20 +82,20 @@ export default function Dashboard() {
         </Card>
       </div>
       <div className="flex w-full gap-2 h-[15%]">
-        <Card className={`w-1/2`}>
-          <CardHeader className={` py-1 border-b-0 shadow-lg`}>
-            Income
-          </CardHeader>
-          <CardBody className={`flex justify-center`}>
-            <p className="text-4xl ">14,205</p>
+        <Card className={`w-1/2 p-0`}>
+          <CardBody
+            className={`h-full flex items-center justify-center text-green-400 font-bold p-0 gap-2`}
+          >
+            <GiReceiveMoney className=" w-[24px] h-[24px]"/>
+            <p className="text-2xl md:text-4xl">14,205</p>
           </CardBody>
         </Card>
-        <Card className={`w-1/2`}>
-          <CardHeader className={` py-1 border-b-0 shadow-lg`}>
-            Expense
-          </CardHeader>
-          <CardBody className={`flex justify-center`}>
-            <p className="text-4xl ">15,250</p>
+        <Card className={`w-1/2 p-0`}>
+          <CardBody
+            className={`h-full flex items-center justify-center text-red-400 font-bold p-0 gap-2`}
+          >
+            <GiPayMoney  className=" w-[24px] h-[24px]"/>
+            <p className="text-2xl md:text-4xl">15,250</p>
           </CardBody>
         </Card>
       </div>
