@@ -1,7 +1,8 @@
 "use client";
-import { FaMoneyBillTransfer } from "react-icons/fa6";
+import { FaChevronDown, FaMoneyBillTransfer } from "react-icons/fa6";
 import React from "react";
 import { redirect } from "next/navigation";
+import Navbar from "./Navbar";
 
 const Header = () => {
   const handleClick = () => {
@@ -21,6 +22,10 @@ const Header = () => {
           Tracker
         </div>
       </div>
+      <div className="relative ">
+      <Navbar></Navbar>
+      </div>
+      <button className="absolute right-0 p-[6px] bg-black rounded-md rounded-t-none top-10"><FaChevronDown/></button>
     </div>
   );
 };

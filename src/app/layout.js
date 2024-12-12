@@ -22,11 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-800`}
       >
-        <Header />
-        <div className=" h-[calc(100vh-40px-56px)]">{children}</div>
-        <Navbar />
+        <Header/>
+        {children}
       </body>
     </html>
   );
